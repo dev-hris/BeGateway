@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/begateway/static/css/main.d787e1be.css",
+    "main.js": "/begateway/static/js/main.bcf0b68c.js",
+    "static/js/787.8eaa20ad.chunk.js": "/begateway/static/js/787.8eaa20ad.chunk.js",
+    "static/media/mainWelcome.png": "/begateway/static/media/mainWelcome.774a960cdb5d616fdf17.png",
+    "static/media/mainWelcomeTablet.png": "/begateway/static/media/mainWelcomeTablet.3ce1dc5b54a705758be0.png",
+    "static/media/mainWelcomeMobile.png": "/begateway/static/media/mainWelcomeMobile.7ebc7c9e256d1e619505.png",
+    "static/media/logo.svg": "/begateway/static/media/logo.006a1572a155a11d11ffd074d169d287.svg",
+    "static/media/linesBackgroundTablet.svg": "/begateway/static/media/linesBackgroundTablet.83323cff95ad3f4669bf.svg",
+    "static/media/connectorsAdaptive.png": "/begateway/static/media/connectorsAdaptive.38d85eabe73aba5252ab.png",
+    "static/media/simpleIntegrationAdaptive.png": "/begateway/static/media/simpleIntegrationAdaptive.a1bd983ebe67b57bf892.png",
+    "static/media/simpleIntegration.png": "/begateway/static/media/simpleIntegration.ca46ee70f60040288711.png",
+    "static/media/connectors.png": "/begateway/static/media/connectors.7c06d4b973ebd061aaba.png",
+    "static/media/linesBackgroundMobile.svg": "/begateway/static/media/linesBackgroundMobile.8282abef8930acd62d65.svg",
+    "static/media/linesBackgroundDesktop.svg": "/begateway/static/media/linesBackgroundDesktop.5f04066e5249191182b6.svg",
+    "static/media/cards.svg": "/begateway/static/media/cards.4546ce135d70f9fdc600853bf8b3a17f.svg",
+    "static/media/merchant.svg": "/begateway/static/media/merchant.5684258cbe672cb08dda3dfd6a20f339.svg",
+    "static/media/card.svg": "/begateway/static/media/card.e9791375f57ca8a9b742.svg",
+    "static/media/cardMobile.svg": "/begateway/static/media/cardMobile.e34b7ffc307771752e19.svg",
+    "index.html": "/begateway/index.html",
+    "static/media/point.svg": "/begateway/static/media/point.adfca720d4a1797f77ca5da641dce7bc.svg",
+    "static/media/pointWhite.svg": "/begateway/static/media/pointWhite.0b0aa4d6c5bb0cf39961e5f0c3fe86a6.svg",
+    "static/media/pointerList.svg": "/begateway/static/media/pointerList.7e1cccd3f3d5830cc2aa.svg",
+    "main.d787e1be.css.map": "/begateway/static/css/main.d787e1be.css.map",
+    "main.bcf0b68c.js.map": "/begateway/static/js/main.bcf0b68c.js.map",
+    "787.8eaa20ad.chunk.js.map": "/begateway/static/js/787.8eaa20ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d787e1be.css",
+    "static/js/main.bcf0b68c.js"
+  ]
+}
