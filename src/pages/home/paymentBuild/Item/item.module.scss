@@ -1,0 +1,45 @@
+@import '../../../../theme/index';
+
+.itemBlock {
+    width: auto;
+    height: auto;
+}
+
+.title {
+    margin-top: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: $white;
+    margin: 0px 15px;
+
+    .orange {
+        background-color: $orange;
+    }
+    .black {
+        background-color: $black;
+    }
+
+    .wrapper {
+        border-radius: 10px;
+        border: 1px solid $lightGrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 220px;
+        height: 280px;
+        box-sizing: border-box;
+        padding: 40px 10px;
+        animation: showWithOpacity 0.2s ease-in-out;
+    }
+}

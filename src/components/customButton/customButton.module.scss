@@ -1,0 +1,35 @@
+@import '../../theme/index';
+
+.container {
+  border-radius: 35px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    transition: background-color 0.3s;
+  }
+  &:disabled {
+    cursor: default;
+  }
+
+  &.btnPrimary {
+    background-color: $orange;
+    color: $white;
+    >svg>path {
+      fill: $white;
+    }
+    
+    &:hover:not(:disabled) {
+      background-color: $darkOrange;
+    }
+    &:active:not(:disabled) {
+      background-color: $lightOrange; 
+    }
+    &:disabled {
+      background-color: $silver;
+    }
+  }
+}

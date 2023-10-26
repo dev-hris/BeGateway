@@ -1,0 +1,172 @@
+@import '../../../theme/index';
+
+.welcomeBlock {
+    height: 1000px;
+    color: $white;
+    background-color: $black;
+    width: 100%;
+    height: auto;
+
+    @include respond-to(tablet) {
+        height: 1053px;
+        background-color: $white;
+    }
+
+    @include respond-to(desktop) {
+        height: 1079px;
+    }
+
+    .background {
+        margin-left: auto;
+        margin-right: auto;
+        width: 375px;
+        height: 898px;
+        padding: 130px 15px 0px;
+        box-sizing: border-box;
+        background: url('../../../assets/images/mainWelcomeMobile.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+
+        @include respond-to(tablet) {
+            width: 744px;
+            height: 1053px;
+            background: url('../../../assets/images/mainWelcomeTablet.png');
+            padding: 164px 40px 40px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+
+        @include respond-to(desktop) {
+            width: 1920px;
+            height: 1079px;
+            padding: 180px 130px 115px;
+            background: url('../../../assets/images/mainWelcome.png');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .title {
+        font-family: 'Yeseva One';
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+        width: 279px;
+
+        @include respond-to(tablet) {
+            font-size: 48px;
+            line-height: 60px;
+            width: 413px;
+        }
+
+        @include respond-to(desktop) {
+            font-size: 80px;
+            line-height: 90px;
+            width: 1000px;
+        }
+    }
+
+    .subtitle {
+        margin-top: 20px;
+        width: 345px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+
+        @include respond-to(tablet) {
+            width: 665px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        @include respond-to(desktop) {
+            width: 620px;
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .card {
+        margin-top: 229px;
+        width: 345px;
+        height: 270px;
+        box-sizing: border-box;
+        padding: 30px 20px;
+        background: url('../../../assets/icons/cardMobile.svg') no-repeat;
+
+        @include respond-to(tablet) {
+            margin-top: 347px;
+            width: 502px;
+            height: 236px;
+            padding: 40px 30px;
+            background: url('../../../assets/icons/card.svg') no-repeat;
+        }
+
+        @include respond-to(desktop) {
+            margin-top: 150px;
+            width: 542px;
+            height: 275px;
+            padding: 50px 30px;
+        }
+
+        .titleCard {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            width: 200px;
+            @include respond-to(tablet) {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                width: auto;
+            }
+        }
+
+        .subtitleCard {
+            margin-top: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            width: 295px;
+            @include respond-to(tablet) {
+                margin-top: 1px;
+                font-weight: 500;
+                width: auto;
+            }
+            @include respond-to(desktop) {
+                margin-top: 5px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .btn {
+            display: inline-flex;
+            padding: 19px 37px;
+            align-items: center;
+            margin-top: 26px;
+            
+            @include respond-to(tablet) {
+                padding: 19px 58px;
+                margin-top: 30px;
+            }
+            @include respond-to(desktop) {
+                margin-top: 59px;
+            }
+        }
+
+        .btnText {
+            color: $white;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px; 
+            @include respond-to(tablet){
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    }
+}
