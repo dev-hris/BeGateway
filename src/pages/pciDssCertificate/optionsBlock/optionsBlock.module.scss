@@ -1,0 +1,114 @@
+@import "../../../theme/index.scss";
+
+.optionsBlock {
+  display: flex;
+  flex-direction: column;
+  margin: 220px 6px 0px 6px;
+  padding-bottom: 90px;
+  @include respond-to(tablet) {
+    margin: 177px 20px 0px 20px;
+    padding-bottom: 140px;
+  }
+  @include respond-to(desktop) {
+    margin: 0px 25px 140px 25px;
+    padding-bottom: 100px;
+  }
+  .optionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px 9px;
+    @include respond-to(tablet) {
+      margin: 0px 20px;
+    }
+    @include respond-to(desktop) {
+      margin: 0;
+      flex-direction: row;
+      gap: 80px;
+    }
+    .cardOption {
+      padding: 30px 20px;
+      border-radius: 20px;
+      border: 1px solid $black01;
+      background: $gray02;
+      @include respond-to(tablet) {
+        padding: 30px;
+      }
+      @include respond-to(desktop) {
+        flex: 1;
+        padding: 30px 30px 40px 30px;
+        display: flex;
+        gap: 40px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      backdrop-filter: blur(12.5px);
+      .optionTitle {
+        color: $black;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 34px;
+        margin: 0;
+        @include respond-to(desktop) {
+          font-size: 30px;
+          line-height: 40px;
+          min-width: 150px;
+        }
+      }
+      .optionSubTitleBlock {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $black01;
+        margin-top: 20px;
+        .optionSubTitle {
+          color: $black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+          @include respond-to(tablet) {
+            line-height: 26px;
+          }
+          @include respond-to(desktop) {
+            margin-top: 0px;
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+        .boldText {
+          color: $orange;
+          font-weight: 600;
+        }
+      }
+      .optionTextBlock {
+        padding-top: 20px;
+        .optionText {
+          color: $black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+          @include respond-to(desktop) {
+            font-size: 18px;
+            line-height: 28px;
+          }
+        }
+        .boldText {
+          color: $orange;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .imagePciDss {
+    margin-top: 50px;
+    @include respond-to(desktop) {
+      align-self: center;
+      margin-top: 120px;
+      flex: 1;
+    }
+  }
+}

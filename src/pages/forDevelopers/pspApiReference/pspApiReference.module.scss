@@ -1,0 +1,144 @@
+@import "../../../theme/index.scss";
+
+.pspApiReference {
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  @include respond-to(desktop) {
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .overlay {
+    height: 93%;
+    width: 100%;
+    background-color: $black;
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%, 0 100%);
+    z-index: -1;
+    position: absolute;
+  }
+  @include respond-to(tablet) {
+    padding-top: 50px;
+  }
+  .content {
+    margin: 0 15px;
+    @include respond-to(tablet) {
+      margin: 0 40px;
+    }
+    @include respond-to(desktop) {
+      margin: 0 25px;
+      flex: 1;
+    }
+    .textContent {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .title {
+        color: $white;
+        font-family: Yeseva One;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        @include respond-to(tablet) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+        @include respond-to(desktop) {
+          font-size: 50px;
+          line-height: 60px;
+        }
+      }
+      .text {
+        color: $white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        @include respond-to(desktop) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+    .card {
+      border-radius: 20px;
+      border: 1px solid $black015;
+      background: $white;
+      backdrop-filter: blur(20px);
+      padding: 40px 20px;
+      margin-top: 50px;
+      @include respond-to(tablet) {
+        padding: 30px;
+      }
+      @include respond-to(desktop) {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+      }
+      .cardTitle {
+        color: $orange;
+        font-family: Yeseva One;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        @include respond-to(tablet) {
+          font-size: 24px;
+          line-height: 34px;
+        }
+        @include respond-to(desktop) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      .cardText {
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 20px;
+        @include respond-to(desktop) {
+          font-size: 18px;
+          line-height: 28px;
+          margin-top: 30px;
+        }
+      }
+      .cardBtn {
+        width: 100%;
+        padding: 19px 0px;
+        margin-top: 30px;
+        color: $white;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        @include respond-to(tablet) {
+          width: 305px;
+        }
+        @include respond-to(tablet) {
+          min-width: 236px;
+          margin-top: 0px;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+  .boardImage {
+    max-width: 375px;
+    align-self: flex-end;
+    @include respond-to(tablet) {
+      max-width: 529px;
+    }
+    @include respond-to(desktop) {
+      max-width: 850px;
+      margin-right: 25px;
+      flex: 1;
+    }
+  }
+}

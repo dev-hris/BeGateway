@@ -1,0 +1,61 @@
+@import "../../../../../../theme/index.scss";
+
+.container {
+  width: 100%;
+  margin-top: 50px;
+
+  .title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+
+    @include respond-to(desktop) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .listWrapper {
+    margin-top: 20px;
+    display: grid;
+
+    @include respond-to(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px
+    }
+
+    @include respond-to(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 60px;
+    }
+
+    .itemListWrapper {
+      display: grid;
+      grid-template-columns: 10px 1fr;
+      column-gap: 10px;
+
+      .line {
+        width: 10px;
+        margin: 13px 0px;
+        height: 1px;
+        background-color: $orange;
+      }
+
+      .itemList {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        opacity: 0.6;
+
+        @include respond-to(desktop) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

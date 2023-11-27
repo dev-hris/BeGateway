@@ -1,5 +1,4 @@
 import React, {ReactElement} from 'react';
-import cn from 'classnames';
 
 import styles from './itemAdaptive.module.scss';
 

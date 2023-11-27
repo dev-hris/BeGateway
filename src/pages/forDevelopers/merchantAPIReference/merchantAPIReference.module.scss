@@ -1,0 +1,82 @@
+@import "../../../theme/index.scss";
+
+.merchantAPIReference {
+  margin-top: 39px;
+  @include respond-to(tablet) {
+    margin-top: 70px;
+    padding-bottom: 130px;
+  }
+  @include respond-to(desktop) {
+    padding-bottom: 0px;
+  }
+  .content {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    @include respond-to(tablet) {
+      margin: 0px;
+      gap: 50px;
+    }
+    @include respond-to(desktop) {
+      margin: 0px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h3,
+    p {
+      margin: 0;
+    }
+    .imageOffice {
+      border-top-right-radius: 20px;
+      clip-path: polygon(0 0, 100% 0, 100% 76%, 76% 100%, 0 100%);
+      overflow: hidden;
+      @include respond-to(tablet) {
+        margin-right: 40px;
+      }
+      @include respond-to(desktop) {
+        flex: 1;
+      }
+    }
+    .textContent {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @include respond-to(tablet) {
+        margin: 0px 40px;
+      }
+      @include respond-to(desktop) {
+        flex: 1;
+        margin: 0px 25px 0px 0px;
+      }
+      .title {
+        color: $black;
+        font-family: Yeseva One;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        @include respond-to(tablet) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+        @include respond-to(tablet) {
+          font-size: 50px;
+          line-height: 60px;
+        }
+      }
+      .text {
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        @include respond-to(tablet) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

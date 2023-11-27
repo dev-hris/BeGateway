@@ -164,6 +164,9 @@ export const PaymentBuild: React.FunctionComponent = () => {
                 </ul>
             </div>
         </div>
+        <div className={styles.buttons}>
+
+        </div>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  position: relative;
+  z-index: 100;
+
+  @include respond-to(desktop) {
+    display: none;
+
+  }
+  .btn {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  display: grid;
+  box-sizing: border-box;
+  padding: 0px 15px;
+
+  @include respond-to(tablet) {
+    padding: 0px 40px;
+  }
+
+  @include respond-to(desktop) {
+    grid-template-columns: 500px 790px;
+    padding: 0px 26px;
+    column-gap: 80px;
+    justify-content: center;
+  }
+
+  .textWrapper {
+    width: 100%;
+
+    .title {
+      width: 345px;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+
+
+      @include respond-to(tablet) {
+        width: 490px;
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      @include respond-to(desktop) {
+        line-height: 40px;
+        font-size: 50px;
+
+      }
+    }
+
+    .description {
+      font-family: Montserrat;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 500;
+      margin-block-start: 30px;
+      margin-block-end: 0px;
+
+      @include respond-to(tablet) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @include respond-to(desktop) {
+        font-size: 18px;
+        line-height: 30px;
+
+      }
+    }
+  }
+
+  .imgWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .img{
+      margin-top: 62px;
+      width: 345px;
+
+      @include respond-to(tablet) {
+        width: 664px;
+      }
+      @include respond-to(desktop) {
+        width: 100%;
+        margin-top: 0px;
+      }
+    }
+  }
+}

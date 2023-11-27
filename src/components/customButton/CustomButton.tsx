@@ -1,9 +1,11 @@
-import React, {ReactElement} from 'react';
-import cn from 'classnames';
+import React, { ReactElement } from "react";
+import cn from "classnames";
 
-import {ButtonVariant} from '../../utils/constants/buttonVariantEnum';
+import { ButtonVariant } from "../../utils/constants/buttonVariantEnum";
 
-import styles from './customButton.module.scss';
+import { ReactComponent as ArrowRight } from "../../assets/icons/arrowRightOrange.svg";
+
+import styles from "./customButton.module.scss";
 
 type CustomButtonProps = {
   children?: ReactElement | string;
@@ -15,6 +17,7 @@ type CustomButtonProps = {
 
 const variantsStyle: Partial<Record<ButtonVariant, string>> = {
   [ButtonVariant.Primary]: styles.btnPrimary,
+  [ButtonVariant.OutLine]: styles.btnOutLine,
 };
 
 export const CustomButton: React.FunctionComponent<CustomButtonProps> = ({
@@ -24,10 +27,19 @@ export const CustomButton: React.FunctionComponent<CustomButtonProps> = ({
   onClick,
   disabled = false,
 }) => {
+  if (variant === ButtonVariant.Redirect) {
+    return (
+      <button onClick={onClick} disabled={disabled} className={cn(className, styles.requestWrapper)}>
+        <div className={styles.arrow}>
+          <ArrowRight />
+        </div>
+        <div className={styles.text}>{children}</div>
+      </button>
+    );
+  }
   return (
     <button
-      className={cn(
-        className, styles.container, variantsStyle[variant])}
+      className={cn(className, styles.container, variantsStyle[variant])}
       onClick={onClick}
       disabled={disabled}
     >

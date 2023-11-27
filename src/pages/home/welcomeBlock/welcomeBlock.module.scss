@@ -1,44 +1,60 @@
 @import '../../../theme/index';
 
 .welcomeBlock {
-    height: 1000px;
+    height: 818px;
     color: $white;
     background-color: $black;
     width: 100%;
-    height: auto;
+    position: relative;
 
     @include respond-to(tablet) {
-        height: 1053px;
-        background-color: $white;
+        height: 973px;
     }
 
     @include respond-to(desktop) {
         height: 1079px;
     }
 
+    .whiteAngle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 50%;
+        background-color: white;
+        display: none;
+
+        @include respond-to(tablet) {
+            height: 179px;
+            display: flex;
+        }
+
+        @include respond-to(desktop) {
+            height: 200px;
+        }
+    }
+
     .background {
+        z-index: 10;
+        position: inherit;
         margin-left: auto;
         margin-right: auto;
         width: 375px;
-        height: 898px;
-        padding: 130px 15px 0px;
+        height: 100%;
+        padding: 50px 15px 0px;
         box-sizing: border-box;
-        background: url('../../../assets/images/mainWelcomeMobile.png');
+        background: url('../../../assets/images/mainWelcomeMobile.png') center center no-repeat;
         background-size: auto 100%;
-        background-repeat: no-repeat;
 
         @include respond-to(tablet) {
             width: 744px;
-            height: 1053px;
             background: url('../../../assets/images/mainWelcomeTablet.png');
-            padding: 164px 40px 40px;
+            padding: 84px 40px 40px;
             background-size: auto 100%;
             background-repeat: no-repeat;
         }
 
         @include respond-to(desktop) {
-            width: 1920px;
-            height: 1079px;
             padding: 180px 130px 115px;
             background: url('../../../assets/images/mainWelcome.png');
             background-size: auto 100%;

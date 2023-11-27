@@ -1,0 +1,107 @@
+@import "../../theme/index.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .img {
+    object-fit: contain;
+    height: 150px;
+    margin-right: 15px;
+    margin-top: 5px;
+
+    @include respond-to(tablet) {
+      height: 200px;
+      margin-right: 40px;
+    }
+
+    @include respond-to(desktop) {
+      margin-right: 100px;
+      height: 350px;
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    margin-bottom: 280px;
+
+    @include respond-to(tablet) {
+      margin-bottom: 530px;
+      padding: 0px 40px;
+    }
+
+    @include respond-to(desktop) {
+      margin-top: 170px;
+      margin-bottom: 250px;
+      padding: 0px 130px;
+    }
+  }
+
+  .title {
+    font-family: Yeseva One;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+
+    @include respond-to(tablet) {
+      width: 500px;
+      line-height: 60px;
+      font-size: 48px;
+    }
+
+    @include respond-to(desktop) {
+      width: 100%;
+      line-height: 70px;
+      font-size: 60px;
+    }
+  }
+
+  .description {
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 500;
+
+    @include respond-to(tablet) {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+    @include respond-to(desktop) {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    margin-top: 60px;
+    box-sizing: border-box;
+    padding: 15px 0px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    width: 100%;
+
+    @include respond-to(tablet) {
+      width: fit-content;
+      padding: 19px 60px;
+      margin-top: 80px;
+    }
+
+    @include respond-to(desktop) {
+      margin-top: 170px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

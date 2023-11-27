@@ -1,0 +1,105 @@
+@import "../../../theme/index.scss";
+
+.beGatewayReliability {
+  padding: 50px 0px;
+  @include respond-to(tablet) {
+    padding: 0px;
+    background-color: $black;
+  }
+  @include respond-to(desktop) {
+    padding: 0px;
+    background-color: $white;
+    max-height: 376px;
+    position: absolute;
+    right: 25px;
+    top: 467px;
+    width: 44%;
+  }
+  .content {
+    margin: 0 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include respond-to(tablet) {
+      margin: 0 40px;
+      margin-top: 0px;
+    }
+    @include respond-to(desktop) {
+      margin: 0px 25px 0px 0px;
+      margin-top: 0px;
+    }
+    .title {
+      color: $black;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 34px;
+      span {
+        color: $orange;
+      }
+      @include respond-to(tablet) {
+        color: $white;
+      }
+      @include respond-to(desktop) {
+        color: $black;
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    .listsBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include respond-to(tablet) {
+        flex-direction: row;
+        gap: 20px;
+      }
+      .list {
+        list-style-type: none;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        flex: 1;
+
+        @include respond-to(tablet) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          row-gap: 10px;
+        }
+
+        .listItem {
+          position: relative;
+          padding-left: 15px;
+          color: $black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+
+          @include respond-to(tablet) {
+            color: $white;
+          }
+          @include respond-to(desktop) {
+            color: $black;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          span {
+            font-weight: 600;
+          }
+
+          &::before {
+            content: "■";
+            color: $orange;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

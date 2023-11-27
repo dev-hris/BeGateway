@@ -4,6 +4,11 @@
   "private": true,
   "homepage": "https://dev-hris.github.io/BeGateway",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@mantine/carousel": "^6.0.21",
+    "@mantine/core": "^6.0.21",
+    "@mantine/hooks": "^6.0.21",
+    "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,9 +16,14 @@
     "@types/node": "^16.18.59",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
+    "@types/react-redux": "^7.1.28",
     "classnames": "^2.3.2",
+    "embla-carousel-autoplay": "^8.0.0-rc14",
+    "embla-carousel-react": "^7.1.0",
+    "gh-pages": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.1.3",
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "sass": "^1.69.4",
@@ -45,8 +55,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.0.0"
   }
 }

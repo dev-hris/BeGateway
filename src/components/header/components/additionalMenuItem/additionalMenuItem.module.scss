@@ -1,0 +1,41 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  position: relative;
+  width: 345px;
+
+  @include respond-to(desktop) {}
+
+  .linkWrapper {
+    flex-wrap: wrap;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: $white;
+
+    @include respond-to(desktop) {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+  }
+
+  .activeCursor {
+    @include respond-to(desktop) {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      bottom: 0px;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      margin: auto 0px auto -20px;
+      background-color: $orange;
+    }
+  }
+}

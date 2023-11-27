@@ -1,0 +1,27 @@
+@import "../../theme/index.scss";
+
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  overflow: hidden;
+  td,
+  th {
+    text-align: center;
+
+    h3,
+    p {
+      margin: 0;
+    }
+  }
+  tr {
+    td:first-child {
+      text-align: start;
+    }
+    th:first-child {
+      text-align: start;
+    }
+  }
+}

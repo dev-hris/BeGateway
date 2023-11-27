@@ -1,0 +1,63 @@
+@import "../../theme/index.scss";
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: $codGray;
+  display: flex;
+  overflow-y: auto;
+
+  @include respond-to(tablet) {
+    overflow-y: hidden;
+    justify-content: flex-end;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: inherit;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @include respond-to(tablet) {
+      justify-content: space-between;
+      width: 448px;
+      padding: 0px 40px;
+    }
+
+    .langAndCloseBtnsWrapper {
+      display: flex;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 38px 0px 2px 0px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .linkWrapper {
+      margin-top: 40px;
+      width: 100%;
+      height: inherit;
+      margin-bottom: 40px;
+
+      @include respond-to(tablet) {
+        margin-bottom: 0px;
+        overflow-y: auto;
+      }
+    }
+
+    .bottomBtnWrapper {
+      width: 100%;
+      height: 145px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn {
+        height: 65px;
+        width: 100%
+      }
+    }
+  }
+}

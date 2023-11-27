@@ -60,11 +60,8 @@
 
     .itemsBlockDesktop {
         width: 100%;
-        max-width: 1920px;
-        display: flex;
         background: url('../../../assets/images/linesBackgroundDesktop.svg') center center no-repeat;
-        height: 518px;
-        align-items: flex-end;
+        height: 510px;
         justify-content: center;
         display: none;      
         @include respond-to(desktop) {
@@ -74,6 +71,7 @@
         .itemsWrapper {
             width: 100%;
             display: flex;
+            padding-top: 95px;
             align-items: flex-start;
             justify-content: center;
         }
@@ -93,7 +91,7 @@
 
         .pspBlock {
             height: 240px;
-            width: 317px;
+            width: 250px;
             color: $white;
             display: flex;
             flex-direction: column;
@@ -115,7 +113,7 @@
             }
     
             .itemSubtitle {
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 600;
                 line-height: 30px;
             }
@@ -157,7 +155,7 @@
             justify-content: center;
         }
         @include respond-to(desktop) {
-            font-size: 40px;
+            font-size: 30px;
             margin: 20px 0px 10px;
         }
     }
@@ -172,8 +170,8 @@
             text-align: center;
         }
         @include respond-to(desktop) {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 28px;
         }
     }
 
@@ -189,6 +187,7 @@
         @include respond-to(desktop) {
             font-size: 18px;
             line-height: 28px;
+            text-align: center;
         }
     }
 
@@ -370,5 +369,12 @@
                 padding-bottom: 0px;
             }
         }
+    }
+
+    .buttons {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 15px;
+        margin-top: 50px;
     }
 }

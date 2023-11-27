@@ -1,5 +1,49 @@
 @import '../../theme/index';
 
+.requestWrapper {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+
+  .arrow {
+    margin-right: 15px;
+
+    @include respond-to(desktop) {
+      margin-right: 20px;
+
+    }
+  }
+
+  .text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+
+    @include respond-to(desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &:disabled {
+
+  .arrow {
+
+    > svg > path {
+      stroke: $silver;
+    }
+  }
+
+    .text {
+      color: $silver;
+
+    }
+  }
+}
+
 .container {
   border-radius: 35px;
   border: none;
@@ -11,6 +55,7 @@
   &:hover:not(:disabled) {
     transition: background-color 0.3s;
   }
+
   &:disabled {
     cursor: default;
   }
@@ -18,18 +63,46 @@
   &.btnPrimary {
     background-color: $orange;
     color: $white;
+
     >svg>path {
       fill: $white;
     }
-    
+
     &:hover:not(:disabled) {
       background-color: $darkOrange;
     }
+
     &:active:not(:disabled) {
-      background-color: $lightOrange; 
+      background-color: $lightOrange;
     }
+
     &:disabled {
       background-color: $silver;
+    }
+  }
+
+  &.btnOutLine {
+    border: 1px solid $orange;
+    background-color: transparent;
+    color: $orange;
+    padding: 19px 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+
+    &:hover:not(:disabled) {
+      background-color: $orange20;
+
+    }
+
+    &:active:not(:disabled) {
+      background-color: $orange20;
+    }
+
+    &:disabled {
+      color: $silver;
+      border: 1px solid $silver;
     }
   }
 }

@@ -1,0 +1,91 @@
+@import "../../../../theme/index.scss";
+
+.wrapper {
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  @include respond-to(desktop) {
+    background-color: $black;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  color: $black;
+  box-sizing: border-box;
+  padding: 70px 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to(tablet) {
+    padding: 120px 40px;
+  }
+
+  @include respond-to(desktop) {
+    color: $white;
+    padding: 135px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .title {
+    text-align: center;
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+
+    @include respond-to(tablet) {
+      text-align: start;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    @include respond-to(desktop) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  .description {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+
+    @include respond-to(tablet) {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: start;
+    }
+
+    @include respond-to(desktop) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .btn {
+    padding: 19px 60px;
+    margin-top: 50px;
+    width: 100%;
+
+    @include respond-to(tablet) {
+      width: 327px;
+    }
+
+    @include respond-to(desktop) {
+      margin-top: 0px;
+      width: 250px;
+      height: 55px;
+    }
+  }
+}

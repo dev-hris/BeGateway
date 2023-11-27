@@ -1,0 +1,15 @@
+@import "../../theme/index.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow-y: hidden;
+  z-index: 100;
+  top: 0px;
+  right: 0px;
+
+  @include respond-to(tablet) {
+    background-color: $codGray50;
+  }
+}

@@ -8,6 +8,7 @@ import styles from './welcomeBlock.module.scss';
 export const WelcomeBlock: React.FunctionComponent = () => {
   return (
     <div className={styles.welcomeBlock}>
+      {/* <div className={styles.whiteAngle}/>
       <div className={styles.background}>
         <h1 className={styles.title}>White Label Payment Processing Software</h1>
         <h2 className={styles.subtitle}>{`For Payment Service Providers and Bank Acquirers to build 
@@ -19,7 +20,7 @@ export const WelcomeBlock: React.FunctionComponent = () => {
             <span className={styles.btnText}>Check PCI DSS certificate</span>
           </CustomButton>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

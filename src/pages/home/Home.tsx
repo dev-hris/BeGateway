@@ -1,8 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import {CustomButton} from '../../components/customButton/CustomButton';
-import {ButtonVariant} from '../../utils/constants/buttonVariantEnum';
-
+import { SliderHome } from '../../components/sliderHome/SliderHome';
 import WelcomeBlock from './welcomeBlock/WelcomeBlock';
 import PaymentBuild from './paymentBuild/PaymentBuild';
 
@@ -13,6 +11,7 @@ export const Home: React.FunctionComponent = () => {
     <div className={styles.container}>
       <WelcomeBlock/>
       <PaymentBuild/>
+      <SliderHome />
     </div>
   );
 }

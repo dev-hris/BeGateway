@@ -1,0 +1,42 @@
+@import "../../../theme/index.scss";
+
+.questionsBlock {
+  background-color: $black;
+  padding: 80px 0px 90px 0px;
+  @include respond-to(desktop) {
+    padding: 100px 0px 150px 0px;
+  }
+
+  .title {
+    color: $white;
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0px 15px;
+    @include respond-to(tablet) {
+      line-height: 40px;
+      margin: 0px 40px;
+    }
+    @include respond-to(desktop) {
+      margin: 0px 25px;
+    }
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    @include respond-to(tablet) {
+      margin-top: 50px;
+    }
+    @include respond-to(desktop) {
+      flex-direction: row;
+      gap: 50px;
+      margin: 50px 25px 0px 25px;
+      min-height: 350px;
+    }
+  }
+}

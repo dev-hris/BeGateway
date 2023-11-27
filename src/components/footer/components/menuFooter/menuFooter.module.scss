@@ -1,0 +1,97 @@
+@import "../../../../theme/index.scss";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  color: $white;
+  box-sizing: border-box;
+  padding: 70px 15px 30px;
+
+  @include respond-to(tablet) {
+    padding: 70px 40px 140px;
+  }
+
+  .navigationWrapper {
+    display: grid;
+    row-gap: 50px;
+    grid-template-areas:
+      'features'
+      'resources'
+      'developers'
+      'company'
+      'contacts'
+      'socials'
+      'eCom';
+
+    @include respond-to(tablet) {
+      column-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 30px min-content;
+      grid-template-areas:
+        'features resources'
+        'developers contacts'
+        'company contacts'
+        'eCom socials';
+    }
+
+    @include respond-to(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 30px 1fr;
+      grid-template-areas:
+        'features developers resources contacts'
+        'features company resources contacts'
+        'features company resources socials'
+        'features company resources eCom';
+    }
+  }
+
+  .socials {
+    grid-area: socials;
+    display: grid;
+    grid-auto-flow: column;
+    width: 160px;
+    column-gap: 20px;
+  }
+
+  .eCom {
+    grid-area: eCom;
+    display: grid;
+    row-gap: 20px;
+
+    @include respond-to(desktop) {
+      column-gap: 30px;
+      grid-template-columns: 120px 1fr;
+    }
+
+    .img {
+      width: 100px;
+
+      @include respond-to(desktop) {
+        width: 120px
+      }
+    }
+
+    .infoECom {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      opacity: 0.8;
+
+      @include respond-to(desktop) {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        text-wrap: nowrap;
+      }
+    }
+  }
+}

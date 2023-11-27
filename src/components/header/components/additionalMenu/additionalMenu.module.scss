@@ -1,0 +1,46 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  margin: 24px 0px;
+  @include respond-to(desktop) {
+    margin: 0px;
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.center {
+    @include respond-to(desktop) {
+      align-items: center;
+    }
+  }
+
+  .part {
+    display: none;
+    @include respond-to(desktop) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .contentWrapper {
+    display: grid;
+    row-gap: 15px;
+    grid-template-rows: auto;
+
+
+    @include respond-to(desktop) {
+      row-gap: 20px;
+      max-height: 280px;
+      grid-auto-flow: column;
+      width: max-content;
+      background-color: $codGray;
+      border-radius: 30px;
+      padding: 40px 60px;
+      box-sizing: border-box;
+    }
+  }
+}

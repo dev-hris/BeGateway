@@ -1,0 +1,142 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  margin-top: 80px;
+  width: 100%;
+  padding: 80px 0px;
+  box-sizing: border-box;
+  background-color: $black;
+  color: $white;
+
+  @include respond-to(tablet) {
+    margin-top: 120px;
+  }
+
+  @include respond-to(desktop) {
+    margin-top: 230px;
+  }
+
+  .title {
+    padding: 0px 15px;
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+
+    @include respond-to(tablet) {
+      padding: 0px 40px;
+      line-height: 40px;
+    }
+
+    @include respond-to(desktop) {
+      font-size: 40px;
+      line-height: 50px;
+      padding: 0px 24px;
+      width: 670px;
+      margin-bottom: 65px;
+    }
+
+    &__orange {
+      color: $orange;
+    }
+  }
+
+  .contentWrapper {
+    display: grid;
+
+    @include respond-to(desktop) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .connectorsImgWrapper {
+      position: relative;
+      width: 100%;
+
+      .connectorsImg {
+        width: 100%;
+      }
+
+      .shadow {
+        position: absolute;
+        width: 100%;
+        height: 375px;
+        bottom: 0px;
+        background: linear-gradient(0deg, $black 15.89%, rgba(25, 25, 25, 0.00) 88.45%);
+      }
+    }
+
+    .btn {
+      color: $white;
+      margin-top: 30px;
+      padding: 0px 15px;
+
+      @include respond-to(tablet) {
+        padding: 0px 40px;
+      }
+
+      @include respond-to(tablet) {
+        margin-top: 80px;
+      }
+    }
+
+    .paragraphs {
+      width: 100%;
+      padding: 0px 15px;
+      box-sizing: border-box;
+
+      @include respond-to(tablet) {
+        padding: 0px 40px;
+      }
+
+      .paragraph {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: 20px 1fr;
+        column-gap: 15px;
+
+        @include respond-to(desktop) {
+          column-gap: 30px;
+          grid-template-columns: 30px 1fr;
+        }
+
+        &:first-child {
+          margin-top: 0px;
+
+        }
+
+        .step {
+          font-family: Yeseva One;
+          font-size: 34px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 40px;
+
+          @include respond-to(tablet) {
+            line-height: 50px;
+            font-size: 40px;
+          }
+
+          @include respond-to(desktop) {
+            font-size: 70px;
+            line-height: 80px;
+          }
+        }
+
+        .text {
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+          opacity: 0.6;
+
+          @include respond-to(desktop) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

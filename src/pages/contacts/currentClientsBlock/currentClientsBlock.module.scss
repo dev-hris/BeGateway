@@ -1,0 +1,46 @@
+@import "../../../theme/index";
+
+.currentClientsBlock {
+  padding: 80px 0px 90px 0px;
+  background-color: $black;
+
+  @include respond-to(tablet) {
+    padding: 50px 0px 120px 0px;
+  }
+  @include respond-to(tablet) {
+    padding: 100px 0px 130px 0px;
+  }
+  .title {
+    color: $white;
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0px 15px;
+
+    @include respond-to(tablet) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @include respond-to(desktop) {
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0px 25px;
+    }
+  }
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+
+    @include respond-to(tablet) {
+      margin-top: 50px;
+    }
+    @include respond-to(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 50px 25px 0px 25px;
+    }
+  }
+}

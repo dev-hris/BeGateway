@@ -8,7 +8,7 @@
       @content;
     }
   } @else if $media == desktop {
-    @media only screen and (min-width: 1920px) {
+    @media only screen and (min-width: 1440px) {
       @content;
     }
   }

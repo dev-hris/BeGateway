@@ -1,0 +1,66 @@
+@import "../../theme/index.scss";
+
+.card {
+  padding: 20px 20px 30px 20px;
+  background: $white;
+  margin: 0 15px;
+  border-radius: 20px;
+  border: 1px solid $black01;
+  backdrop-filter: blur(12.5px);
+  @include respond-to(tablet) {
+    margin: 0 40px;
+    padding: 30px;
+  }
+  @include respond-to(desktop) {
+    margin: 0px;
+    padding: 30px 30px 84px 30px;
+    flex: 1 1 30%;
+  }
+  p {
+    margin: 0;
+  }
+  .cardTitle {
+    color: $black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 10px 0px;
+    @include respond-to(desktop) {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  .linksContainer {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include respond-to(desktop) {
+      gap: 12px;
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      @include respond-to(tablet) {
+        gap: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.48px;
+        @include respond-to(desktop) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

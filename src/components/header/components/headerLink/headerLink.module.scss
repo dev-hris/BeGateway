@@ -1,0 +1,68 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  cursor: pointer;
+
+  @include respond-to(desktop) {
+    position: relative;
+  }
+
+  &:last-child>.enterLine {
+    display: none;
+  }
+
+  .enterLine {
+    width: 100%;
+    background-color: $white;
+    height: 0.5px;
+    opacity: 0.3;
+    margin: 24px 0px;
+
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .arrowDownWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.active {
+        transform: rotate(180deg);
+      }
+
+      @include respond-to(desktop) {
+        display: none;
+      }
+    }
+
+    @include respond-to(desktop) {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    &.active {
+      @include respond-to(desktop) {
+        color: $orange;
+      }
+    }
+  }
+
+  &:hover>.link {
+    @include respond-to(desktop) {
+      color: $orange;
+    }
+  }
+}

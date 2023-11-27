@@ -1,0 +1,17 @@
+@import "../../../../theme/index.scss";
+
+.container {
+  width: 12px;
+  height: 4px;
+  background-color: $orange;
+  margin-left: 5px;
+  border-radius: 5px;
+
+  &.active {
+    width: 36px;
+  }
+}
+
+.container:first-child {
+  margin-left: 0px;
+}
